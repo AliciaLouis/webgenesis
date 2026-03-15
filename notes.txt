@@ -1,0 +1,326 @@
+HTML TAGS
+
+<p> </p>
+this is a tag 
+
+<p> this is a paragraph </p>
+tag     content         tag
+<-----element---------------->
+
+BASIC HTML PAGE
+
+<!DOCTYPE html>                 tells the browser you r using HTML5
+<html >                         root of an html doc (root element)
+<head>                          container for meta data (it contains the info not to be displayed like meta information)
+    <title>Document</title>     page title
+</head>
+<body>                          contains all the data rendered by the browser
+    <p>hello world</p>          paragraph tag 
+</body>
+</html>
+
+
+viewport ---> makes the html responsive
+<br> ------>for new line
+
+COMMENTS IN HTML
+
+<!--this is a comment-->
+
+HTML IS NOT CASE SENSITIVE
+
+HTML ATTRIBUTES
+THEY ARE USED TO ADD MORE INFO TO THE TAGS
+
+<html lang="en">
+language    english
+
+(lang="en")--->this is a english attribute 
+
+HEADING TAG 
+ 
+used to display headings in html
+
+    <h1>HEADING 1</h1>   (most imp)
+    <h2>HEADING 2</h2>
+    <h3>HEADING 3</h3>
+    <h4>HEADING 4</h4>
+    <h5>HEADING 5</h5>
+    <h6>HEADING 6</h6>   (least imp)
+
+heading is done as per the importance not for the size 1st priority to the 
+heading 1 and it goes on decreasing as the no. increases
+
+in css there in font size tech in case we want diff sizes 
+headings can'tbe used to do so
+
+if there is a long sentence 
+
+    <P>sample paragraph sample paragraph sample paragraph sample paragraphsample paragraph sample paragraphsample paragraph sample paragraphsample paragraph sample paragraphsample paragraph sample paragraphsample paragraph sample paragraph  </P>
+
+and u dont want to scroll horizontally then u r supposed to 
+select the sentence 
+go to settings
+select command palatte 
+search for Toggle Word Wrap
+
+this will allign itself vertically in the same line
+
+ANCHOR TAG
+
+used to add link  to ur page
+
+IMAGE TAG
+
+USED TO ADD IMAGES TO UR PAGE
+
+relative url 
+if the image is already saaved in the folder  (/image_name.png is used )
+
+absolute url
+if the image is taken from an ext  slide (the website url is used)
+
+Br TAG
+
+to add next line
+
+BOLD ITALIC AND UNDERLINE TAG 
+
+<b>BOLD</b>
+
+<i>ITALIC</i>
+
+<u>UNDERLINE</u>
+
+BIG AD SMALL TAGS
+
+<big>BIG</big>
+
+<small>SMALL</small>
+
+Hr TAG
+
+used to display a horizontal rule uswed to sepearte content
+
+<hr>
+
+SUBSCRIPT AND SUPERSCRIPT
+
+<sub>subscript</sub>    H20
+
+<sup>superscript</sup>   A^n+B
+
+PRE TAGS
+
+used to display text as it is (without ignoring spaces and next line)
+
+<pre> this is a sample text </p>
+
+<!--PAGE LAYOUT TECHNIQUES-->
+
+         <!--SEMANTIC(tag header,footer) AND NON-SEMANTIC (div , span)-->
+
+         <!--using semantic tags for layout-->
+
+         <!--using the right tags-->
+
+         <!--<header>,<main>,<footer>-->
+
+INSIDE THE MAIN TAG
+
+Section tag
+<section>
+
+Article tag
+<article>
+
+Aside tag ----->for content aside main content(ads)
+<aside>
+
+Revising anchor tags
+
+when we try to open any links by anchoring its opened on the same tab
+but now we can open it on a diff tab by 
+
+only either the height or the width of the image can be altered 
+suppose if the width is alterd then the height of the image gets adjusted 
+automatically and vice versa
+
+DIV TAG (non semantic tag)
+
+its a container used for other html elements
+
+block element (takes full width)
+
+<div>
+
+thus the block elements occcupy more space than requiredd but the
+inline elements occupy only that much space as they required
+
+SPAN TAG
+
+container used for other html elements
+
+its an inline element occupies space or width as per size
+
+LIST in HTML
+
+used to represent real life list data
+
+2 types ----->ordered and un ordered
+
+eg: if u have done 3-4 projects then we can display then in form of a list
+
+in unordered
+
+in form of bullet points
+
+<ul>
+<li>Apple</li>
+</ul>
+
+in ordered
+
+points can be no., alphabets,roman no.
+
+<ol>
+<li> Apple </li>
+</ol>
+
+<li> </li> is used to display the items of the list
+
+TABLES IN HTML
+
+Tables are used to represent real life table data
+
+<table> </table>
+
+<tr> display table row
+
+<td> display table data
+
+<th> display table header
+
+in a table :
+
+1.  Caption tag 
+
+<caption> </caption>
+
+is used to give name to ur table
+
+2.  thead & tbody in Tables
+
+<thead> to wrap the table head
+
+<tbody> to wrap the table body
+
+
+ATTRIBUTE OF TABLE (colspan)
+
+BASICALLY if we want to give only a single name to multiple columns instead of multiple names
+
+to merge the columns
+
+Form in HTML (vvv imp part of html)
+
+used to collect data from the user
+
+<form>
+form content
+</form>
+
+eg:sign up/contact/login/help request
+
+Action form
+
+used to define what action needs to be performed when a form is submitted
+
+<form action="/action.php">
+
+action.php is a filename in the back-end it basically will process the forms data that if u  have logged in have u given all the required information,if u have signed up it will check if u have entered the correct info like in the place of phone no. if u entered abcd then basically it will check that, to check if u have entered correct username and password 
+
+there r diff elementss in the form
+
+Form elements
+
+Input
+
+<input type="text" placeholder="Enter Name">
+
+placeholder means that something will be written if we dont write anything like in a sense it tells us what are we supposed to type or do
+
+Radio buttons
+
+they are button that allow us only to select 1 button(choice) out of many buttons(choices)
+
+ <input type="radio" value="class XI" name="class">class XI
+
+here if instead of this we write
+
+ <input type="radio" value="class X" name="class">class XI
+
+and u are in class XI but the backend now will get info that u are in class X this is b'coz  the user cannot see the value(value="class") and the backend cannot see the name that the user can see (.....>class XI)
+
+
+LABEL
+
+<label for="101"> 
+<input type="radio" value="class XI" name="class" id="101">class XI
+</label>
+
+<labelfor="102">
+<input type="radio" value="class XII" name="class" id="102">class XII
+</label>
+
+
+here since the name is same so even if we print on the text we can select the option instead of selecting the the radio button only
+
+this helps the people when the size of the text is too small
+
+Class & id
+
+<div id="id1" class="group1">
+</div>
+
+<div id="id2" class="group1">
+</div>
+
+basically if we want to check individual peson we use id1 but if the group is to be checked then group1 will be used 
+
+
+CHECKBOX
+
+used to select multiple options
+
+Text area 
+
+ <textarea name="feedback" id="1" placeholder="Please give your valueable feedback " rows=5 >Feedback</textarea>
+
+to increase the space write rows=5 or cols=9 anything the value can be
+
+Select
+
+if u want to select the dropdown option select is used
+
+iframe tag
+
+website inside website
+
+and only some websites allow the access like wikepedia
+
+Video tag
+
+<video src="link">name to be displayed</video>
+
+here the vido=eo will not play and no other options are available and nothing can be accessed
+
+when we add controls then we can access the video completely
+
+<video src="link" controls loops>name to be displayed</video>
+
+1.loops to play the video again after the video is completely
+
+2.autoplay
+
+
